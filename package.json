@@ -1,6 +1,6 @@
 {
 	"name": "@ntvr/eslint-config",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Netvor's shareable config for eslint",
 	"author": "ntvr",
 	"license": "MIT",
