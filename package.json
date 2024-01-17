@@ -14,6 +14,7 @@
 	"main": "index.js",
 	"files": [
 		"rules",
+		".eslintrc.js",
 		"files.js",
 		"index.js",
 		"javascript.js",
