@@ -1,4 +1,5 @@
-module.exports = {
+// Modern ESLint 9 flat config - import rules
+const importsConfig = {
 	rules: {
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
 		'import/order': [
@@ -30,3 +31,5 @@ module.exports = {
 		],
 	},
 };
+
+module.exports = { importsConfig };

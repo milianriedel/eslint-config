@@ -1,7 +1,10 @@
-module.exports = {
+// Modern ESLint 9 flat config - global rules for React 19
+const globalConfig = {
 	rules: {
 		'no-tabs': 'off',
-		'react/jsx-indent': ['error', 'tab'],
-		'react/jsx-indent-props': ['error', 'tab'],
+		// Note: react/jsx-indent and react/jsx-indent-props are deprecated
+		// Use @stylistic/jsx-indent and @stylistic/jsx-indent-props if formatting is needed
 	},
 };
+
+module.exports = { globalConfig };
