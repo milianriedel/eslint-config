@@ -1,6 +1,6 @@
 {
 	"name": "@ntvr/eslint-config",
-	"version": "1.0.2",
+	"version": "2.0.0",
 	"description": "Netvor's shareable config for eslint",
 	"author": "ntvr",
 	"license": "MIT",
@@ -15,6 +15,7 @@
 	"files": [
 		"rules",
 		".eslintrc.js",
+		"eslint.config.js",
 		"files.js",
 		"index.js",
 		"javascript.js",
@@ -28,34 +29,34 @@
 		]
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.62.0",
-		"@typescript-eslint/parser": "^5.62.0",
-		"eslint": "^8.51.0",
+		"@typescript-eslint/eslint-plugin": "^8.46.0",
+		"@typescript-eslint/parser": "^8.46.0",
+		"eslint": "^9.39.0",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-airbnb-typescript": "^17.1.0",
-		"eslint-config-next": "12.3.4",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-jsx-a11y": "^6.4.1",
-		"eslint-plugin-react": "^7.33.2",
+		"eslint-config-airbnb-typescript": "^18.0.0",
+		"eslint-config-next": "^15.0.0",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-jsx-a11y": "^6.10.0",
+		"eslint-plugin-react": "^7.37.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"typescript-eslint-parser": "^22.0.0"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.62.0",
-		"@typescript-eslint/parser": "^5.62.0",
-		"eslint": "^8.51.0",
+		"@typescript-eslint/eslint-plugin": "^8.46.0",
+		"@typescript-eslint/parser": "^8.46.0",
+		"eslint": "^9.39.0",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-airbnb-typescript": "^17.1.0",
-		"eslint-config-next": "12.3.4",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-jsx-a11y": "^6.4.1",
-		"eslint-plugin-react": "^7.33.2",
+		"eslint-config-airbnb-typescript": "^18.0.0",
+		"eslint-config-next": "^15.0.0",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-jsx-a11y": "^6.10.0",
+		"eslint-plugin-react": "^7.37.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"typescript-eslint-parser": "^22.0.0"
 	},
 	"scripts": {
-		"lint": "eslint .",
-		"lint:fix": "eslint --fix",
+		"lint": "ESLINT_USE_FLAT_CONFIG=false eslint .",
+		"lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint --fix .",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"homepage": "https://github.com/ntvr/eslint-config#readme"

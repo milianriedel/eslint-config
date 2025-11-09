@@ -5,10 +5,8 @@ module.exports = {
 	extends: [
 		'./.eslintrc',
 		'./rules/react',
-		'plugin:@next/next/core-web-vitals',
+		'next/core-web-vitals',
 	],
-
-	parser: 'eslint-config-next/parser',
 
 	parserOptions: {
 		allowImportExportEverywhere: true,
@@ -30,22 +28,24 @@ module.exports = {
 		},
 	},
 
-	overrides: [{
-		files: files.typescript,
+	overrides: [
+		{
+			files: files.typescript,
 
-		extends: ['airbnb-typescript'],
+			extends: ['airbnb-typescript'],
 
-		parserOptions: {
-			project: './tsconfig.json',
-			sourceType: 'module',
-			warnOnUnsupportedTypeScriptVersion: true,
+			parserOptions: {
+				project: './tsconfig.json',
+				sourceType: 'module',
+				warnOnUnsupportedTypeScriptVersion: true,
+			},
+
+			rules: {
+				'@typescript-eslint/indent': styles.rules.indent,
+				'react/prop-types': 'off',
+				'react/require-default-props': 'off',
+				'jsx-a11y/control-has-associated-label': 'off',
+			},
 		},
-
-		rules: {
-			'@typescript-eslint/indent': styles.rules.indent,
-			'react/prop-types': 'off',
-			'react/require-default-props': 'off',
-			'jsx-a11y/control-has-associated-label': 'off',
-		},
-	}],
+	],
 };
