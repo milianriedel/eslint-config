@@ -1,42 +1,16 @@
-module.exports = {
+// Modern ESLint 9 flat config - style rules
+// Note: Deprecated formatting rules like 'indent' and 'max-len' removed in ESLint 9
+// These can be replaced with @stylistic/eslint-plugin if needed
+const stylesConfig = {
 	rules: {
 		// https://eslint.org/docs/rules/no-console
 		'no-console': 'warn',
-
-		// https://eslint.org/docs/latest/rules/max-len
-		'max-len': [
-			'error',
-			{
-				code: 120,
-				tabWidth: 4,
-				ignoreUrls: true,
-				ignoreComments: false,
-				ignoreRegExpLiterals: true,
-				ignoreStrings: true,
-				ignoreTemplateLiterals: true,
-			},
-		],
-
-		// https://eslint.org/docs/latest/rules/indent#rule-details
-		indent: ['error', 'tab',
-			{
-				SwitchCase: 1,
-				VariableDeclarator: 1,
-				outerIIFEBody: 1,
-				MemberExpression: 1,
-				FunctionDeclaration: {
-					parameters: 1,
-					body: 1,
-				},
-				FunctionExpression: {
-					parameters: 1,
-					body: 1,
-				},
-				CallExpression: {
-					arguments: 1,
-				},
-			},
-		],
+		
+		// Deprecated rules removed:
+		// - 'indent' -> use @stylistic/indent
+		// - 'max-len' -> use @stylistic/max-len
+		// These formatting rules are no longer part of ESLint core in v9
 	},
-
 };
+
+module.exports = { stylesConfig };
